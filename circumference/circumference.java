@@ -1,5 +1,6 @@
 package circumference;
 
+// we import the Scanner class from the java.util package
 import java.util.Scanner;
 
 public class circumference {
