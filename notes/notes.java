@@ -7,6 +7,7 @@ public class notes {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the value of the note: ");
         int note = input.nextInt();
+        input.close();
         if(note == 10){
             System.out.println("A");
         }else if(note == 8){
