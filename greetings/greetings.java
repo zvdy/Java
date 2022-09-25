@@ -12,6 +12,7 @@ public class greetings {
         Scanner keyboard = new Scanner(System.in);
         // we read the input and store it in a variable
         String name = keyboard.nextLine();
+        keyboard.close();
         // we print the results
         System.out.println("Hello " + name + "!");        
     }

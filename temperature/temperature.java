@@ -13,6 +13,7 @@ public class temperature {
         Scanner keyboard = new Scanner(System.in);
         // We read the input and store it in a variable
         double celsius = keyboard.nextDouble();
+        keyboard.close();
         // We calculate the temperature in Fahrenheit
         final double fahrenheit = celsiusToFahrenheit * celsius + 32;
         // We calculate the temperature in Kelvin

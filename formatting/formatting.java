@@ -15,6 +15,7 @@ public class formatting {
         double height = input.nextDouble();
         System.out.print("Enter your weight: ");
         double weight = input.nextDouble();
+        input.close();
         // You can use printf or format to print out the variables and give them filters, like shortening the decimal places
         System.out.printf("Hello %s, you are %d years old, your height is %.2f m, and you weight %.3f kg", name ,age, height, weight);
     }

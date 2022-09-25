@@ -11,6 +11,7 @@ public class highestnum {
         num1 = input.nextInt();
         System.out.print("Enter the second number: ");
         num2 = input.nextInt();
+        input.close();
         if (num1 > num2) {
             System.out.println("The first number is greater than the second number " + "=" +num1);
         } else if (num1 < num2) {

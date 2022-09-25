@@ -8,6 +8,7 @@ public class palindromeNumber {
         Scanner kb = new Scanner(System.in);
         System.out.print("Enter a number: ");
         x = kb.nextInt();
+        kb.close();
         int z = x;
         int y = 0;
         while (x > 0) {

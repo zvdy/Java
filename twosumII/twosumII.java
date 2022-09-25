@@ -14,6 +14,8 @@ public class twosumII {
         // We ask for the second num
         System.out.print("Enter the second number: ");
         n2 = kb.nextInt();
+        // We close the scanner
+        kb.close();
         // We print the operations of the two numbers
         System.out.println("Your selected numbers are " + n1 + " and " + n2);
         System.out.println("The sum of the two numbers is: " + (n1+n2));

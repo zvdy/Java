@@ -14,6 +14,7 @@ public class rockpaperscissors {
         player1 = input.nextInt();
         System.out.println("Player 2: Enter 1 for rock, 2 for paper, 3 for scissors");
         player2 = input.nextInt();
+        input.close();
         // The if condition to check if player 1 or 2 wins
         if (player1 == player2) {
             System.out.println("It's a tie!");

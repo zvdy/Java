@@ -11,6 +11,7 @@ public class positivenegative {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a number: ");
         number = input.nextInt();
+        input.close();
         // We check if the number is positive, negative or zero 
         if (number > 0) {
             System.out.println("The number is positive");

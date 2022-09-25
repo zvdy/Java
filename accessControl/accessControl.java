@@ -7,6 +7,7 @@ public class accessControl {
         System.out.print("Please enter the password: ");
         Scanner keyboard = new Scanner(System.in);
         String password = keyboard.nextLine();
+        keyboard.close();
         // we check if the password is correct
         if (password.equals("S")) {
             System.out.println("Access granted to SMR");

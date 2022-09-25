@@ -11,6 +11,7 @@ public class circumference {
         Scanner keyboard = new Scanner(System.in);
         // We read the input and store it in a variable
         double radius = keyboard.nextDouble();
+        keyboard.close();
         // We declare the value of pi
         final double pi = 3.1516;
         // We calculate the circumference

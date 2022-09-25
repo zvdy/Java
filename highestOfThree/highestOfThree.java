@@ -15,6 +15,7 @@ public class highestOfThree {
         num2 = input.nextInt();
         System.out.print("Enter the third number: ");
         num3 = input.nextInt();
+        input.close();
         // We check if all the numbers are the same
         if (num1 == num2 && num1 == num3) {
             System.out.println("All the numbers are the same");
