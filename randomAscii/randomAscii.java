@@ -4,7 +4,6 @@ public class randomAscii {
     public static void main(String[] args) {
         // We create a random number between 33 and 126
         int random = (int) (Math.random() * (126 - 33 + 1) + 33);
-        System.out.println("");
         // We print the random number
         System.out.println(random);
         // We print the random number in ASCII
