@@ -1,6 +1,6 @@
-package encrypt;
+package passwordEncrypt;
 
-public class encrypt {
+public class passwordEncrypt {
     public static void main(String[] args) {
         // Ask user for a password
         System.out.println("Enter a password: ");
