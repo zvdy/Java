@@ -5,6 +5,7 @@ public class factorial {
         // Ask a user fot a number and return the factorial of that number
         System.out.println("Enter a number: ");
         Scanner input = new Scanner(System.in);
+        input.close();
         int number = input.nextInt();
         int factorial = 1;
         for (int i = 1; i <= number; i++) {
