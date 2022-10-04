@@ -11,18 +11,30 @@ public class NumberisPrime {
         input.close();
         // Check if the number is prime
         boolean isPrime = true;
-        for (int divisor = 2; divisor <= number / 2; divisor++) {
-            if (number % divisor == 0) {
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
                 isPrime = false;
                 break;
             }
         }
-        // Display the result
-        if (isPrime) {
-            System.out.println(number + " is a prime number");
+        //If the number isn't prime, return the next prime number
+        if (!isPrime) {
+            for (int i = number + 1; i < 100000; i++) {
+                boolean isPrime2 = true;
+                for (int j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        isPrime2 = false;
+                        break;
+                    }
+                }
+                if (isPrime2) {
+                    System.out.println("The next prime number is " + i);
+                    break;
+                }
+            }
         } else {
-            System.out.println(number + " is not a prime number");
+            System.out.println("The number is prime");
         }
-
     }
 }
+
