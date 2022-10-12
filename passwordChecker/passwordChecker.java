@@ -72,10 +72,16 @@ public class passwordChecker {
     }
 
     public static void main(String[] args) {
-        // Ask a user to enter a password
-        System.out.print("Please enter a password: ");
+        // Ask a user to enter a password and give him 3 tries to enter a valid password
         Scanner input = new Scanner(System.in);
+        System.out.println("Enter a password: ");
         String password = input.nextLine();
+        int tries = 0;
+        while (!checkPassword(password) && tries < 3) {
+            System.out.println("Invalid, enter a valid password: ");
+            password = input.nextLine();
+            tries++;
+        }
         input.close();
 
         // Print the password strength
