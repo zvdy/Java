@@ -4,8 +4,9 @@ public class valueSum {
     
     // Make the user input the size of two arrays that we will use to sum the index values
     // Method to ask the user for the size of the array1
+    public static Scanner input = new Scanner(System.in);
+
     public static int askSizeArray1() {
-        Scanner input = new Scanner(System.in);
         System.out.print("Enter the size of the first array: ");
         int sizeArray1 = input.nextInt();
         return sizeArray1;
@@ -13,7 +14,6 @@ public class valueSum {
 
     // Method to ask the user for the size of the array2
     public static int askSizeArray2() {
-        Scanner input = new Scanner(System.in);
         System.out.print("Enter the size of the second array: ");
         int sizeArray2 = input.nextInt();
         return sizeArray2;
@@ -21,7 +21,6 @@ public class valueSum {
 
     // Method to ask the user for the values of the array1
     public static int[] askValuesArray1(int sizeArray1) {
-        Scanner input = new Scanner(System.in);
         int[] array1 = new int[sizeArray1];
         System.out.println("Enter the values of the first array: ");
         for (int i = 0; i < sizeArray1; i++) {
@@ -81,5 +80,6 @@ public class valueSum {
         int[] array2 = askValuesArray2(sizeArray2);
         int[] array3 = sumValues(array1, array2);
         printValues(array3);
+        input.close();
     }
 }
