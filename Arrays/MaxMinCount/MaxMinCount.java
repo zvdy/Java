@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class MaxMinCount {
     // We create an array, return the max and min of the array and the times that them repeated on the array
     // Create a method to ask the user the lenght of the array, close the scanner that we created
+    public static Scanner input = new Scanner(System.in);
+    
     public static int askSize() {
-        Scanner input = new Scanner(System.in);
         System.out.print("Enter the size of the array: ");
         int size = input.nextInt();
         return size;
@@ -78,5 +79,6 @@ public class MaxMinCount {
         int[] maxMin = findMaxMin(array);
         int[] countMaxMin = countMaxMin(array, maxMin);
         printMaxMinCount(maxMin, countMaxMin);
+        input.close();
     }        
 }
