@@ -14,23 +14,24 @@ public class notas {
         notas = 0;
         // Preguntamos nota hasta que se introduzca -1, contamos el número de suspensos, la
         // cantidad de notas introducidas y la media de todas las notas
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Introduce una nota: ");
+        notas = teclado.nextInt();
+
         while (notas != -1) {
-            System.out.println("Introduzca nota: ");
-            Scanner teclado = new Scanner(System.in);
-            notas = teclado.nextInt();
-            contador = contador+1;
-            if (notas < 5 && notas != -1) {
+            if (notas < 5) {
                 numSuspensos++;
             }
-            if (notas != -1) {
-                sumaNotas = sumaNotas + notas;
-            }
+            sumaNotas = sumaNotas + notas;
+            contador++;
+            System.out.println("Introduce una nota: ");
+            notas = teclado.nextInt();
         }
-        System.out.println("Los suspensos son: " + numSuspensos);
+
+        System.out.println("La media de las notas es: " + (sumaNotas / contador));
+        System.out.println("El número de suspensos es: " + numSuspensos);
         System.out.println("El número de notas introducidas es: " + contador);
-        System.out.println("La media de las notas es " + sumaNotas / (contador - 1));
-        
-        
+        teclado.close();
     }
 }
 
