@@ -3,17 +3,18 @@ import java.util.Scanner;
 
 public class mathMenu {
     
+
+    public static Scanner teclado = new Scanner(System.in);
     // Crearemos los metodos de main
     // Metodo para preguntar por un número entre 1-10
     public static int dimeNumero() {
         System.out.println("Introduce un número: ");
-        Scanner teclado = new Scanner(System.in);
         int num = teclado.nextInt();
-        if (num > 10 || num <1)
-            System.out.println("Error, ejecute de nuevo");    
-        else
-            System.out.println("El número introducido es: " + num);
-            return num;
+        while (num < 1 || num > 10) {
+            System.out.println("Introduce un número entre 1 y 10: ");
+            num = teclado.nextInt();
+        }
+        return num;
     }
 
     // Método para decir si num es par o impar
@@ -45,5 +46,6 @@ public class mathMenu {
         cuadrado = ElevaCuadrado(num);
         System.out.println("El cuadrado de " + num + " es " + cuadrado);
         muestraTablaMultiplicar(num);
+        teclado.close();
     }
 }
