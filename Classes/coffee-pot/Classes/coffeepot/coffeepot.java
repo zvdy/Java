@@ -1,5 +1,4 @@
-public class coffeepot {
-    
+class coffeepot {
     // Create a new CoffePot class with the following properties:
     // Max Capacity (in liters)
     // Current Capacity (in liters)
